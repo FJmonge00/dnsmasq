@@ -3,7 +3,7 @@
 # DNSMASQ
 ![logo dnsmasq](/imagenes/imagen_portada.png)
 ## Descripción
-El proyecto consiste en estudiar la herramienta Portainer, que nos permite el despliegue de contenedores utilizando una interfaz gráfica.
+El proyecto consiste en montar un servidor DNS simple con la herramienta DNSMASQ, que nos permite el despliegue de servidor DNS con un equipo de pocos recursos.
 ## Índice
 ### [1.- Introducción.](documentacion/introduccion.md)
 ### [2.- Instalación y configuración.](documentacion/instalacion.md)
