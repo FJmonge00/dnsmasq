@@ -37,12 +37,12 @@ Reiniciamos y vemos el estado del servicio:
 ![ReinicioYEstado](../imagenes/servicioReinicioYEstado.png)
 
 Usaremos el archivo /etc/hosts como "Base de datos" para los dominios.
-Fichero /etc/hosts (añadimos la informacion del cliente y el servidor)
+Fichero /etc/hosts (añadimos la información del cliente y el servidor)
 
 ![hots](../imagenes/ficheroHosts.png)
 
 ## Configuraciones en el cliente
-En el cliente pondremos la IP que habiamos indicado anteriormente en /etc/hosts en el servidor. cambiaremos los dns con la ip del servidor.
+En el cliente pondremos la IP que habíamos indicado anteriormente en /etc/hosts en el servidor. cambiaremos los dns con la ip del servidor.
 
 ![ClienteConfiguracion](../imagenes/configuracionCliente.png)
 
