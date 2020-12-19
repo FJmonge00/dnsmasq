@@ -10,11 +10,8 @@ El proyecto consiste en estudiar la herramienta Portainer, que nos permite el de
 ### [3.- Pruebas funcionamiento.](documentacion/pruebas.md)
 
 ## Referencias
-- <https://markdown.es>
-- <https://www.portainer.io>
-- <https://www.danielmartingonzalez.com>
-- <https://hub.docker.com>
-- <https://victorhckinthefreeworld.com>
-- <https://alexpro.sytes.net>
-- <https://www.statdeveloper.com>
-- <https://freewebsitetemplates.com>
+- <https://wiki.archlinux.org>
+- <http://recursostic.educacion.es>
+- <https://www.linuxsysadmin.ml>
+- <https://commotionwireless.net>
+- <https://www.redeszone.net>

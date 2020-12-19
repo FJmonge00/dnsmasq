@@ -1,18 +1,19 @@
 <img src="../imagenes/MI-LICENCIA88x31.png" style="float: left; margin-right: 10px;" />
 
-# 3.- Acceso
-## Acceso
+# 3.- Pruebas
+## Comandos para pruebas
 
-### Con el navegador accedemos a *http://localhost:9000*
+``dig cliente01``
 
-#### Indicamos usuario y contraseña
-![fotoacceso](../imagenes/portainer.png)
+``dig fran``
 
-#### Clicamos en *Local* y *Connect*
-![fotoacceso2](../imagenes/acceso2.png)
+``dig -x 192.168.3.1``
 
-#### ¡Listo!
-![fotoacceso2](../imagenes/accesoFin.png)
+``dig -x 192.168.3.11``
+
+## Pruebas de ping
+![pruebasPing](../imagenes/pruebasDePing.png)
+
 ________________________________________
 *[Volver al indice...](../README.md)*
 

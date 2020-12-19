@@ -1,25 +1,50 @@
 <img src="../imagenes/MI-LICENCIA88x31.png" style="float: left; margin-right: 10px;" />
 
 # 2.- Instalación
-![logo portainer](../imagenes/portainer.png)
-## Instalación del contenedor
-Al bajarnos la imagen de DockerHub tendremos que especificar tambien el usuario ya que no es una imagen oficial de docker...
+![logoDNS](../imagenes/DNS.webp)
 
-![pull de la imagen](../imagenes/poolDeLaImagen.png)
+## Configuración en el Servidor
+Configuración de red:
 
-`docker pull portainer/portainer`
+![red](../imagenes/configuracionRed.png)
 
-Levantamos la imagen con docker run...
+Reiniciamos el servicio
 
-`docker run -d --name portainer -p 9000:9000 -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer`
+``systemctl restart networking``
 
-![pull de la imagen](../imagenes/poolDeLaImagen.png)
+Instalamos DNS dnsmasq:
 
-Comprobamos que esta corriendo la imagen...
+``apt install dnsmasq``
 
-`docker ps`
+Activamos el servicio, reiniciamos y comprobamos estado:
 
-![docker ps](../imagenes/dockerps.png)
+``systemctl enable dnsmasq;systemctl start dnsmasq;systemctl status dnsmasq``
+
+Copia de seguridad del fichero:
+
+``cp /etc/dnsmasq.conf /etc/dnsmasq.conf.ORIGINAL``
+
+Ejecutamos los siguientes comandos:
+
+``echo "server=/fran.com/192.168.1.1" >> /etc/dnsmasq.conf``
+
+``echo "local=/fran.com/" >> /etc/dnsmasq.conf``
+
+Reiniciamos y vemos el estado del servicio:
+
+``systemctl restart dnsmasq.service;systemctl status dnsmasq.service``
+
+![ReinicioYEstado](../imagenes/servicioReinicioYEstado.png)
+
+Usaremos el archivo /etc/hosts como "Base de datos" para los dominios.
+Fichero /etc/hosts (añadimos la informacion del cliente y el servidor)
+
+![hots](../imagenes/ficheroHosts.png)
+
+## Configuraciones en el cliente
+En el cliente pondremos la IP que habiamos indicado anteriormente en /etc/hosts en el servidor. cambiaremos los dns con la ip del servidor.
+
+![ClienteConfiguracion](../imagenes/configuracionCliente.png)
 
 ________________________________________
 *[Volver al indice...](../README.md)*
