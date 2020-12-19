@@ -47,4 +47,6 @@ En el cliente pondremos la IP que habíamos indicado anteriormente en /etc/hosts
 ![ClienteConfiguracion](../imagenes/configuracionCliente.png)
 
 ________________________________________
+*[Ir a pruebas DNS...](./pruebas.md)*
+
 *[Volver al indice...](../README.md)*
