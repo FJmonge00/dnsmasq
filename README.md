@@ -3,7 +3,7 @@
 # DNSMASQ
 ![logo dnsmasq](/imagenes/imagen_portada.png)
 ## Descripción
-El proyecto consiste en montar un servidor DNS simple con la herramienta DNSMASQ, que nos permite el despliegue de servidor DNS con un equipo de pocos recursos.
+El proyecto consiste en montar un servidor DNS simple con la herramienta DNSMASQ, que nos permite el despliegue de un servidor DNS con un equipo de pocos recursos.
 ## Índice
 ### [1.- Introducción.](documentacion/introduccion.md)
 ### [2.- Instalación y configuración.](documentacion/instalacion.md)
